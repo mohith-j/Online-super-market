@@ -1,0 +1,225 @@
+:root{
+	--primary-color: #e50914;
+}
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: 'Arial', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	background: black;
+	color: black;
+}
+
+ul{
+	list-style: none;
+
+}
+
+h1, h2, h3, h4{
+	color: white;
+}
+
+a{
+	color:white;
+	text-decoration: none;
+}
+
+p{
+	margin: 0.5rem;
+	color: white;
+}
+
+img{
+	width: 100%;
+}
+
+input::placeholder {
+  color:    #a0a0a0;
+  opacity:  1;
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #a0a0a0;
+}
+::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #a0a0a0;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #a0a0a0;
+   opacity:  1;
+}
+::-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #a0a0a0;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #a0a0a0;
+}
+::placeholder { /* Most modern browsers support this now. */
+   color:    #a0a0a0;
+}
+
+.showcase{
+	width: 100%;
+	height: 93vh;
+	position: relative;
+	background: url('../images/background.jpg') no-repeat center center/cover;
+}
+/*.showcase1{
+	width: 100%;
+	height: 93vh;
+	position: relative;
+	background: url('../images/background.jpg') no-repeat center center/cover;
+}*/
+
+.showcase:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width:100%;
+	height: 100%;
+	z-index: 1;
+	background: rgba(0, 0, 0, 0.6);
+	box-shadow: inset 60px 50px 250px #000000, inset -60px -50px 250px #000000;
+}
+
+.showcase-top{
+	position: relative;
+	height: 90px;
+	z-index: 2;
+
+}
+
+.showcase-top img{
+	width: 170px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.showcase-top h1{
+	width: 170px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.showcase-top a{
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translate(-50%, -50%);
+}
+
+
+#showcase-content{
+	z-index: 2;
+	position:relative;
+	margin:auto;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: left;
+	margin-top: 3rem;
+	font-weight: 700;
+	font-size: 1.9rem;
+	line-height: 1.1;
+	margin: 0 0 2rem;
+	text-transform: uppercase;
+	color: white;
+	padding-top: 13rem;
+}
+#showcase-content input[type="text"], #showcase-content input[type="password"]{
+	background-color:transparent;
+	border: 0;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	padding-right: 7px;
+	border-bottom: 1px solid #fff;
+	line-height: 2px;
+	width: 100%;
+	color: white;
+}
+
+#scs{
+	text-align: center;
+}
+
+#inputRegister{
+	width: 400px;
+	padding: 45px;
+	float: center;
+	border: 5px solid #fff;
+	color: white;
+	position: absolute;
+	top:100px;
+	bottom: 25px;
+	left: 0;
+	right: 0;  	
+	margin: auto;
+	z-index: 2;
+}
+
+#inputRegister input[name="regno1"], #inputRegister input[name="email"],
+#inputRegister input[name="name"], #inputRegister input[name="password1"],  #inputRegister input[name="phno"], 
+#inputRegister input[name="blockname"], #inputRegister input[name="roomno"]{
+	background-color:transparent;
+	border: 0;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	padding-right: 7px;
+	border-bottom: 1px solid #fff;
+	line-height: 2px;
+	width: 100%;
+	color: white;
+	z-index:2;
+	font-size: 14;
+}
+
+.btn{
+	display: inline-block;
+	background: var(--primary-color);
+	color:white;
+	padding: 0.4rem 1.3rem;
+	font-size: 1 rem;
+	text-align: center;
+	border: none;
+	cursor: pointer;
+	margin-right: 0.5rem;
+	outline: none;
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+	border-radius: 2px;
+
+}
+
+.btn:hover{
+	opacity: 0.9;
+}
+
+.btn-rounded{
+	border-radius: 5px;
+}
+
+.btn-xl{
+	font-size: 2rem;
+	padding: 1rem 1.7rem;
+	text-transform: uppercase;
+	z-index: 2;
+	align-items: center;
+}
+
+.btn-lg{
+	font-size: 1rem;
+	padding: 0.8rem, 1.3rem;
+	text-transform: uppercase;
+	align-self: center;
+	align-items: center;
+}
+
