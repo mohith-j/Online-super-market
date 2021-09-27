@@ -1,2 +1,2 @@
 # Online-super-market
-This project is an web application of online super market called ALMART.
+Getting our goods and products for our day to day activities is an action that we do regularly. We usually spend lot of time going to the supermarket to purchase day to day requirements amongst our busy schedules. So in order to make this task easy and efficient our project is aimed at creating a platform to ease the work. This platform also creates opportunities for business to expand their boundaries and increase their income. We students and faculties of VIT have a busy schedule all the time. This platform helps to order our necessary products right from our rooms.
